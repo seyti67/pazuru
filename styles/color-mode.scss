@@ -1,0 +1,15 @@
+body.colorfull {
+	--bg-color: #eff2fc;
+	--shadow-color: #0005;
+
+	background-color: var(--bg-color);
+	color: #172348;
+}
+
+body.dark {
+	--bg-color: #333;
+	--shadow-color: #000;
+	
+	background-color: var(--bg-color);
+	color: #fff;
+}
