@@ -4,6 +4,9 @@ body.colorfull {
 
 	background-color: var(--bg-color);
 	color: #172348;
+	#colorfull-button{
+		transform: scale(1.2);
+	}
 }
 
 body.dark {
@@ -12,4 +15,7 @@ body.dark {
 	
 	background-color: var(--bg-color);
 	color: #fff;
+	#dark-button {
+		transform: scale(1.2);
+	}
 }
