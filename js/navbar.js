@@ -1,7 +1,7 @@
 const categories = [
-	{title:'Accueil'},
-	{title:'Jouer'},
-	{title:'Créer'}
+	'Accueil',
+	'Jouer',
+	'Créer'
 ]
 
 function init_navbar() {
