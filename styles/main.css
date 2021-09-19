@@ -7,6 +7,7 @@
 
 :root {
 	--full-height: 100vh;
+	--elastic: cubic-bezier(.85,.12,.43,2);
 }
 
 button {
@@ -43,6 +44,7 @@ nav {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: repeat(4, 1fr);
+	transition: 300ms transform var(--elastic);
 }
 #color-modes span {
 	height: 100%;
