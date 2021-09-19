@@ -68,8 +68,8 @@ function apply_vertical_force(direction) {
 }
 
 // sets borders
-let ceil = Bodies.rectangle(width/2, -10, width, 20, { isStatic: true });
-let ground = Bodies.rectangle(width/2, height+10, width, 20, { isStatic: true });
-let right = Bodies.rectangle(width+10, height/2, 20, height, { isStatic: true });
-let left = Bodies.rectangle(-10, height/2, 20, height, { isStatic: true });
+let ceil = Bodies.rectangle(width/2, -10, width, 18, { isStatic: true });
+let ground = Bodies.rectangle(width/2, height+10, width, 18, { isStatic: true });
+let right = Bodies.rectangle(width+10, height/2, 18, height, { isStatic: true });
+let left = Bodies.rectangle(-10, height/2, 18, height, { isStatic: true });
 Composite.add(engine.world, [ceil, ground, right, left]);

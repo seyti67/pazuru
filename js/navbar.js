@@ -1,5 +1,14 @@
-(() => {
-	const menu = '';
+const categories = [
+	{title:'Accueil'},
+	{title:'Jouer'},
+	{title:'Créer'}
+]
+
+function init_navbar() {
+	let menu = '';
+	categories.forEach(() => {
+		menu += ''
+	})
 	let colorfullBoxes = '';
 	let darkboxes = '';
 	for(let i = 0; i < 16; i++) {
@@ -9,5 +18,6 @@
 	}
 	const colorButtons = `<div id="color-modes" onclick="toggle_color_mode();"><button id="dark-button">${darkboxes}</button><button id="colorfull-button">${colorfullBoxes}</button></div>`;
 	const navbar = `<nav>${menu}${colorButtons}</nav>`;
-	document.body.innerHTML += navbar+document.body.innerHTML;
-})();
+	document.getElementById('header').innerHTML = navbar;
+};
+init_navbar();
