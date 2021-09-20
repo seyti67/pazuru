@@ -1,14 +1,16 @@
 const categories = [
-	'Accueil',
-	'Jouer',
-	'Créer'
+	{title:'Accueil', path:''},
+	{title:'Jouer', path:''},
+	{title:'Créer', path:''}
 ]
 
 function init_navbar() {
-	let menu = '';
-	categories.forEach(() => {
-		menu += ''
-	})
+	let menu = '<ul id="navlist">';
+	categories.forEach(category => {
+		menu += `<li><a href="${category.path}">${category.title}</a></li>`;
+	});
+	menu += '</ul>';
+	
 	let colorfullBoxes = '';
 	let darkboxes = '';
 	for(let i = 0; i < 16; i++) {

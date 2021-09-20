@@ -1,6 +1,8 @@
 body.colorfull {
 	--bg-color: #eff2fc;
-	--shadow-color: #0005;
+	--shadow-color: #002bb875;;
+	--hover-bg: #d1deff;
+	--hover-color: #0730a1;
 
 	background-color: var(--bg-color);
 	color: #172348;
@@ -11,6 +13,8 @@ body.colorfull {
 
 body.dark {
 	--bg-color: #333;
+	--hover-bg: #424242;
+	--hover-color: #d3d3d3;
 	--shadow-color: #0009;
 	
 	background-color: var(--bg-color);

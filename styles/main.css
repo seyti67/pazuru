@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Kaisei+HarunoUmi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Kaisei+HarunoUmi&family=Roboto+Mono&display=swap');
 
 * {
 	box-sizing: border-box;
@@ -10,6 +10,10 @@
 	--elastic: cubic-bezier(.85,.12,.43,2);
 }
 
+body {
+	font-family: 'Roboto Mono', monospace;
+}
+
 button {
 	background: none;
 	border: none;
@@ -19,28 +23,52 @@ h1 {font-family: 'Indie Flower', cursive;}
 
 .o {display: inline-block;}
 
+header {
+	position: fixed;
+}
 nav {
-	font-size: 15px;
+	font-size: 30px;
 	display: block;
 	background-color: var(--bg-color);
-	height: 75px;
+	height: 2.5em;
 	width: 100vw;
 	box-shadow: 0 0 10px var(--shadow-color);
 }
+#navlist {
+	list-style-type: none;
+}
+#navlist > li {
+	float: left;
+	transition: 200ms background-color;
+}
+#navlist > li:hover {
+	background-color: var(--hover-bg);
+	color: var(--hover-color);
+}
+#navlist a {
+	font-size: 1em;
+	line-height: 1em;
+	display: inline-block;
+	padding: .75em;
+	color: var(--font-color);
+	text-decoration: none;
+}
+
 #color-modes {
 	position: absolute;
 	display: flex;
 	justify-content: space-between;
 	right: 1em;
-	top: 1em;
-	width: 6em;
+	top: .50em;
+	width: 3.5em;
 	cursor: pointer;
 }
 #color-modes > button {
+	font-size: 100%;
 	cursor: pointer;
 	padding: 0;
-	height: 3em;
-	width: 3em;
+	height: 1.5em;
+	width: 1.5em;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: repeat(4, 1fr);
